@@ -54,6 +54,11 @@ Where app argument `Android` refers to defined service in config file.
 To multiple devices and optioned message:
 ```php
 
+In Controller file write this line.
+
+use PushNotification; 
+
+
 PushNotification::app('Android')
                 ->to($deviceToken)
                 ->send('Hello World, i`m a push message');
