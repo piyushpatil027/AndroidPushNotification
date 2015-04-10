@@ -1,0 +1,24 @@
+{
+    "name": "piyushpatil/androidpushnotification",
+    "description": "",
+    "authors": [
+        {
+            "name": "Piyush Patil",
+            "email": "piyushpatil027@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "sly/notification-pusher": "2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Piyushpatil\\Androidpushnotification\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
