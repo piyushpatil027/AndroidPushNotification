@@ -1,9 +1,9 @@
 <?php
 
-return array(
-    'Android' => array(
+return [
+    'Android' => [
         'environment' => 'production',
         'apiKey' => 'yourAPIKey',
         'service' => 'gcm'
-    )
-);
+    ]
+];

@@ -3,7 +3,6 @@
 namespace Piyushpatil\Androidpushnotification;
 
 use Illuminate\Support\ServiceProvider;
-use Piyushpatil\Androidpushnotification\PushNotification;
 
 class AndroidpushnotificationServiceProvider extends ServiceProvider {
 
@@ -20,7 +19,9 @@ class AndroidpushnotificationServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
-        $this->package('piyushpatil/androidpushnotification');
+        $this->publishes([
+            __DIR__ . '/../../config/config.php' => config_path('androidpushnotification.php'),
+                ], 'config');
     }
 
     /**

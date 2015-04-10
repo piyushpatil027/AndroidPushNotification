@@ -5,15 +5,14 @@ namespace Piyushpatil\Androidpushnotification;
 use Sly\NotificationPusher\PushManager,
     Sly\NotificationPusher\Model\Device,
     Sly\NotificationPusher\Model\Message,
-    Sly\NotificationPusher\Model\Push;
+    Sly\NotificationPusher\Model\Push,
+    Sly\NotificationPusher\Adapter;
 
 class Android {
 
     public function __construct($config) {
         $this->pushManager = new PushManager($config['environment'] == "development" ? PushManager::ENVIRONMENT_DEV : PushManager::ENVIRONMENT_PROD);
-
         $adapterClassName = 'Sly\\NotificationPusher\\Adapter\\' . ucfirst($config['service']);
-
         $adapterConfig = $config;
         unset($adapterConfig['environment'], $adapterConfig['service']);
 

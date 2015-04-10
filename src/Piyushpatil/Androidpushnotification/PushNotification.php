@@ -1,7 +1,6 @@
 <?php
 
 namespace Piyushpatil\Androidpushnotification;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,7 +16,7 @@ class PushNotification {
 
     //put your code here
     public function app($appName) {
-        return new Android(\Config::get('laravel-push-notification::' . $appName));
+        return new Android(\Config::get('androidpushnotification.' . $appName));
     }
 
     public function Message() {

@@ -12,7 +12,7 @@ class PushNotification extends Facade {
      * @return string
      */
     protected static function getFacadeAccessor() {
-        return 'pushNotification';
+        return 'Piyushpatil\Androidpushnotification\PushNotification';
     }
 
 }
