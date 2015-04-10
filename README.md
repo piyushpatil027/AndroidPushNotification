@@ -74,11 +74,5 @@ foreach ($collection->pushManager as $push) {
     $response = $push->getAdapter()->getResponse();
 }
 
-
-#### Usage advice
-This package should be used with [Laravel Queues], so pushes dont blocks the user and are processed in the background, meaning a better flow.
-
-
-
 [Notification Package]:https://github.com/Ph3nol/NotificationPusher
 [Laravel Queues]:http://laravel.com/docs/queues
