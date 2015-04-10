@@ -1,11 +1,15 @@
 {
     "name": "piyushpatil/androidpushnotification",
     "description": "Laravel package to send push notifications to android mobile devices (gcm)",
-    "keywords": ["gcm","push","notification", "laravel"],
+    "keywords": ["gcm", "push", "notification", "laravel"],
+    "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Piyush Patil",
-            "email": "piyushpatil027@gmail.com"
+            "email": "piyushpatil027@gmail.com",
+            "homepage": "http://piyushpatil.info",
+            "role": "Developer"
         }
     ],
     "require": {
