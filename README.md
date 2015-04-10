@@ -74,11 +74,6 @@ foreach ($collection->pushManager as $push) {
     $response = $push->getAdapter()->getResponse();
 }
 
-// access to adapter for advanced settings
-$push = PushNotification::app('appNameAndroid');
-$push->adapter->setAdapterParameters(['sslverifypeer' => false]);
-```
-This package is wrapps [Notification Package] and adds some flavor to it.
 
 #### Usage advice
 This package should be used with [Laravel Queues], so pushes dont blocks the user and are processed in the background, meaning a better flow.
