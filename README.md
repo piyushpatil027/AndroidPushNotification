@@ -21,7 +21,7 @@ Register the PushNotification service provider by adding it to the providers arr
 Alias the PushNotification facade by adding it to the aliases array in the `config/app.php` file.
 ```php
 'aliases' => [
-   'PushNotification' => 'Piyushpatil\Androidpushnotification\Facades',
+    'PushNotification' => 'Piyushpatil\Androidpushnotification\Facades\PushNotification',
 ]
 ```
 
