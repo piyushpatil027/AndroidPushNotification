@@ -1,4 +1,4 @@
-AndroidPushNotification
+Laravel 5  AndroidPushNotification
 =========
 
 Package to enable sending push notifications to android devices.
